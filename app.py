@@ -526,4 +526,4 @@ def user_register():
         #when the client needs a resource method is GET
         return render_template('user_registration.html')
 
-app.run(debug=True)
+app.run(debug=False,host="0.0.0.0")
