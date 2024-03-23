@@ -1,3 +1,30 @@
+/* css for landingpage */
+.navbar-custom{
+    background-color: rgb(12, 16, 39) !important;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.user-controls {
+    display: flex;
+    align-items: center;
+}
+
+
 .Scard {
 width: 80em;
 flex-direction: row;
