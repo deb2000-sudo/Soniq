@@ -2,7 +2,15 @@
 .navbar-custom{
     background-color: rgb(12, 16, 39) !important;
 }
-
+/* css for land page card */
+body{
+    position: relative;
+}
+main{
+    top: 700%;
+    left: 30%;
+    position: absolute;
+}
 .logo {
     flex-grow: 1;
 }
