@@ -4,7 +4,7 @@
 }
 /* css for land page card */
 body{
-    position: relative;
+    display: flex;
 }
 main{
     top: 700%;
