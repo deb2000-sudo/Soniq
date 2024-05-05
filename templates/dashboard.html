@@ -28,12 +28,6 @@
 </nav>
 <br>
 <div class="container">
-  <!-- heading-->
-  <!-- <div class="row">
-    <div class="col-12">
-      <h1>Administrator Dashboard</h1>
-    </div>
-  </div> -->
   <div class="row">
     <div class="col-3 admin_card_1">
       <div class="card admin_card_2">
@@ -119,10 +113,9 @@
     </div>
   </div>
 </div>
-  <p>your are in admin page</p>
+
 
 {% elif profile=="normal-user" or profile=="creator"%}
-<!-- <h2>{{profile}}</h2> -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     {% if switch_status==True %}
@@ -147,6 +140,7 @@
     </div>
   </div>
 </nav>
+<br>
 <br>
 <main class="container">
   <div class="alert alert-success alert-dismissible" >
