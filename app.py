@@ -120,6 +120,7 @@ def dashboard(profile):
         return render_template('dashboard.html',user=this_user,this_user_song=this_user_song,switch_status=switch_status,switch_value=switch_value,Scount=Scount,Acount=Acount,profile=currentrole,this_user_album=this_user_album,avg_rating=avg_rating,all_albums=all_albums)
     else:
       #initially it will show by GET method
+    #   print(1)
       switch_status=False
       switch_value="Switch to Creator"
       all_songs=Songs.query.all()
@@ -128,7 +129,8 @@ def dashboard(profile):
     #   print(playlist_this_user)
       all_genre=Songs.query.with_entities(Songs.Genre.distinct()).all()
       all_albums=Album.query.filter(Album.user_id==this_user.id).all()
-      print(all_albums)
+    #   print(1)
+    #   print(all_albums)
       return render_template('dashboard.html',user=this_user,all_songs=all_songs,switch_status=switch_status,switch_value=switch_value,profile=currentrole,playlist_this_user=playlist_this_user,all_genre=all_genre,all_albums=all_albums)
     
 @app.route('/dashboard/<int:id>/read-lyrics/<int:S_id>',methods=['GET','POST'])

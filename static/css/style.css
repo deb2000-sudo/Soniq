@@ -1,7 +1,7 @@
 /* css for landingpage */
 * {
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 a:hover {
   text-decoration: none;
@@ -55,11 +55,11 @@ a:hover {
   filter: blur(20px);
 }
 
-main {
+/* main {
   top: 700%;
   left: 30%;
   position: absolute;
-}
+} */
 .logo {
   flex-grow: 1;
 }
